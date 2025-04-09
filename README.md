@@ -1,8 +1,8 @@
-# What We Have Done
+## What We Have Done
 
 We conducted a study to classify text as either AI-generated or human-authored using a custom dataset of 2075 entries (505 human-written abstracts from Springer journals and 1570 AI-generated texts from three chatbots, in a 1:3 ratio). Multiple machine learning (ML) and deep learning (DL) models were evaluated to determine their effectiveness in this binary classification task, with the aim of advancing academic integrity and text authenticity detection.
 
-# Procedure
+## Procedure
 
 1. *Dataset Preparation*: We created a balanced dataset (1:3) and split it into training (80%) and testing (20%) sets.
 2. *Baseline Preprocessing*: Text was processed using standard techniques—lowercasing, tokenization (NLTK), stopword removal, special character removal, and TF-IDF vectorization (5000 max features, unigrams, and bigrams).
@@ -10,7 +10,7 @@ We conducted a study to classify text as either AI-generated or human-authored u
 4. *RST Implementation*: We introduced Rhetorical Structure Theory (RST) preprocessing, incorporating Chi-squared feature selection and an H-score method (based on Hellinger distance) to refine features and capture discourse patterns. Four top-performing models (RoBERTa, SVM, CNN, Random Forest) were re-evaluated with RST.
 5. *Testing*: Performance was assessed using classification reports, confusion matrices, and ROC curves with AUC scores.
 
-### Result
+## Result
 
 The RST preprocessing improved feature extraction by analyzing text coherence and rhetorical relationships, reducing noise and enhancing class separability. This led to accuracy gains in most models:
 - *SVM*: From 93% to 96%
