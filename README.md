@@ -10,7 +10,7 @@ We conducted a study to classify text as either AI-generated or human-authored u
 4. *RST Implementation*: We introduced Rhetorical Structure Theory (RST) preprocessing, incorporating Chi-squared feature selection and an H-score method (based on Hellinger distance) to refine features and capture discourse patterns. Four top-performing models (RoBERTa, SVM, CNN, Random Forest) were re-evaluated with RST.
 5. *Testing*: Performance was assessed using classification reports, confusion matrices, and ROC curves with AUC scores.
 
-*Result*
+### Result
 
 The RST preprocessing improved feature extraction by analyzing text coherence and rhetorical relationships, reducing noise and enhancing class separability. This led to accuracy gains in most models:
 - *SVM*: From 93% to 96%
