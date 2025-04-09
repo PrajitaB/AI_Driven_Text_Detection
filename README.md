@@ -31,7 +31,7 @@ Our best result was a 97% accuracy achieved by RoBERTa with RST preprocessing. T
 
 ## Comparison
 
-![](https://drive.google.com/file/d/1SdiXFMKl5H04uetnqQlt5L_G7F7VztfH/view?usp=sharing)
+![](https://raw.githubusercontent.com/PrajitaB/AI_Driven_Text_Detection/refs/heads/main/ROC.png)
 
 - *Traditional Baseline*: RoBERTa (96%), SVM (93%), CNN/Random Forest (92%), Decision Tree (85%), Logistic Regression/ANN (83%), KNN (79%), Naive Bayes (73%).
 - *RST-Enhanced*: RoBERTa (97%), SVM (96%), Random Forest (95%), CNN (94%), H-Score (65%).
