@@ -12,7 +12,7 @@ We conducted a study to classify text as either AI-generated or human-authored u
 4. *RST Implementation*: We introduced Rhetorical Structure Theory (RST) preprocessing, incorporating Chi-squared feature selection and an H-score method (based on Hellinger distance) to refine features and capture discourse patterns. Four top-performing models (RoBERTa, SVM, CNN, Random Forest) were re-evaluated with RST.
 5. *Testing*: Performance was assessed using classification reports, confusion matrices, and ROC curves with AUC scores.
 
-## Result
+## Result Analysis
 
 The RST preprocessing improved feature extraction by analyzing text coherence and rhetorical relationships, reducing noise and enhancing class separability. This led to accuracy gains in most models:
 - *SVM*: From 93% to 96%
@@ -22,12 +22,21 @@ The RST preprocessing improved feature extraction by analyzing text coherence an
 
 The H-score method, however, underperformed at 65%, indicating its limitations as a standalone classifier.
 
+<image>
+  <img xlink:href="https://raw.githubusercontent.com/PrajitaB/AI_Driven_Text_Detection/refs/heads/main/RST_ROC.png" />
+</image>
+
 Our best result was a 97% accuracy achieved by RoBERTa with RST preprocessing. This was accomplished by:
 - Leveraging RoBERTa’s pre-trained transformer architecture (roberta-base, 12 layers, 768 hidden units) for contextual understanding.
 - Fine-tuning it on our dataset with tokenized inputs via RobertaTokenizer.
 - Enhancing input quality with RST, which used TF-IDF with Chi-squared selection to focus on discriminative terms, boosting RoBERTa’s ability to distinguish AI-generated text (Label 1) from human text (Label 0). Metrics included precision (0.94), recall (0.95), and F1-score (0.95) for Label 0, and 0.98, 0.98, 0.98 for Label 1.
 
 ## Comparison
+
+<image>
+  <img xlink:href="https://raw.githubusercontent.com/PrajitaB/AI_Driven_Text_Detection/refs/heads/main/ROC.png" />
+</image>
+
 - *Traditional Baseline*: RoBERTa (96%), SVM (93%), CNN/Random Forest (92%), Decision Tree (85%), Logistic Regression/ANN (83%), KNN (79%), Naive Bayes (73%).
 - *RST-Enhanced*: RoBERTa (97%), SVM (96%), Random Forest (95%), CNN (94%), H-Score (65%).
 - *Previous Works*: Sankalp Bahad et al. (86.5%), Ayat A. Najjar et al. (85%), Mudasir Ahmad Wani et al. (98.8%).
