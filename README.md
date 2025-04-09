@@ -1,3 +1,5 @@
+# Detection of AI Generated Text
+
 ## What We Have Done
 
 We conducted a study to classify text as either AI-generated or human-authored using a custom dataset of 2075 entries (505 human-written abstracts from Springer journals and 1570 AI-generated texts from three chatbots, in a 1:3 ratio). Multiple machine learning (ML) and deep learning (DL) models were evaluated to determine their effectiveness in this binary classification task, with the aim of advancing academic integrity and text authenticity detection.
