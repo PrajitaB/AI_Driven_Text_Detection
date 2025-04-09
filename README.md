@@ -25,8 +25,8 @@ Our best result was a 97% accuracy achieved by RoBERTa with RST preprocessing. T
 - Fine-tuning it on our dataset with tokenized inputs via RobertaTokenizer.
 - Enhancing input quality with RST, which used TF-IDF with Chi-squared selection to focus on discriminative terms, boosting RoBERTa’s ability to distinguish AI-generated text (Label 1) from human text (Label 0). Metrics included precision (0.94), recall (0.95), and F1-score (0.95) for Label 0, and 0.98, 0.98, 0.98 for Label 1.
 
-# Comparison
+## Comparison
 - *Traditional Baseline*: RoBERTa (96%), SVM (93%), CNN/Random Forest (92%), Decision Tree (85%), Logistic Regression/ANN (83%), KNN (79%), Naive Bayes (73%).
 - *RST-Enhanced*: RoBERTa (97%), SVM (96%), Random Forest (95%), CNN (94%), H-Score (65%).
 - *Previous Works*: Sankalp Bahad et al. (86.5%), Ayat A. Najjar et al. (85%), Mudasir Ahmad Wani et al. (98.8%).
-- **Our Model**: 97% accuracy, with 0.98 precision, recall, and F1-score, rivals Wani et al.’s 98.8% and surpasses others, showing competitive performance with a custom approach.
+- *Our Model*: 97% accuracy, with 0.98 precision, recall, and F1-score, rivals Wani et al.’s 98.8% and surpasses others, showing competitive performance with a custom approach.
