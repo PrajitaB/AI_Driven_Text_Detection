@@ -23,7 +23,7 @@ The RST preprocessing improved feature extraction by analyzing text coherence an
 The H-score method, however, underperformed at 65%, indicating its limitations as a standalone classifier.
 
 <image>
-  <img xlink:href="https://raw.githubusercontent.com/PrajitaB/AI_Driven_Text_Detection/refs/heads/main/RST_ROC.png" />
+  <img xlink:href="https://drive.google.com/file/d/12F3GvLxtpPPP-yQP8MlCIArMc3_J3U-Z/view?usp=sharing" />
 </image>
 
 Our best result was a 97% accuracy achieved by RoBERTa with RST preprocessing. This was accomplished by:
@@ -34,7 +34,7 @@ Our best result was a 97% accuracy achieved by RoBERTa with RST preprocessing. T
 ## Comparison
 
 <image>
-  <img xlink:href="https://raw.githubusercontent.com/PrajitaB/AI_Driven_Text_Detection/refs/heads/main/ROC.png" />
+  <img xlink:href="https://drive.google.com/file/d/1SdiXFMKl5H04uetnqQlt5L_G7F7VztfH/view?usp=sharing" />
 </image>
 
 - *Traditional Baseline*: RoBERTa (96%), SVM (93%), CNN/Random Forest (92%), Decision Tree (85%), Logistic Regression/ANN (83%), KNN (79%), Naive Bayes (73%).
