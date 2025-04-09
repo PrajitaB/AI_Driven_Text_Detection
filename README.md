@@ -22,7 +22,7 @@ The RST preprocessing improved feature extraction by analyzing text coherence an
 
 The H-score method, however, underperformed at 65%, indicating its limitations as a standalone classifier.
 
-![](https://drive.google.com/file/d/12F3GvLxtpPPP-yQP8MlCIArMc3_J3U-Z/view?usp=sharing)
+![](https://raw.githubusercontent.com/PrajitaB/AI_Driven_Text_Detection/refs/heads/main/RST_ROC.png)
 
 Our best result was a 97% accuracy achieved by RoBERTa with RST preprocessing. This was accomplished by:
 - Leveraging RoBERTa’s pre-trained transformer architecture (roberta-base, 12 layers, 768 hidden units) for contextual understanding.
